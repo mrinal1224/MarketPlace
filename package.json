@@ -1,0 +1,23 @@
+{
+  "name": "marketplace",
+  "version": "1.0.0",
+  "description": "MERN ecommerce App",
+  "main": "server.js",
+  "scripts": {
+    "start" : "node backend/server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrinal1224/marketPlace.git"
+  },
+  "author": "Mrinal Bhattacharya",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mrinal1224/marketPlace/issues"
+  },
+  "homepage": "https://github.com/mrinal1224/marketPlace#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
