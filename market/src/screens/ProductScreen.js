@@ -21,7 +21,7 @@ useEffect(()=>{
    
 
 
-} , [])
+},[match.params.id])
 
 
 
