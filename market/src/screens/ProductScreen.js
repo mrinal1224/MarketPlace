@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useState , useEffect } from 'react'
 import {useSelector , useDispatch} from "react-redux"
 import{Link} from "react-router-dom"
 import {Row, Col,Image , ListGroup , Card , Button} from "react-bootstrap"
@@ -10,6 +10,8 @@ import Message from "../components/Message"
 
 
 const ProductScreen = ({match}) => {
+
+    const [qty, setQty] = useState(0)
 
     const dispatch = useDispatch();
 
