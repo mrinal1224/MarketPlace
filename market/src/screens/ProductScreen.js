@@ -11,7 +11,7 @@ import Message from "../components/Message"
 
 const ProductScreen = ({history , match}) => {
 
-    const [qty, setQty] = useState(0)
+    const [qty, setQty] = useState(1)
 
     const dispatch = useDispatch();
 
@@ -119,7 +119,7 @@ useEffect(()=>{
 
 
                            <ListGroup.Item>
-                               <Button className="btn-block" type="button" disabled={product.countInStock===0} onSubmit={addToCartHandler}>
+                               <Button className="btn-block" type="button" disabled={product.countInStock===0} onClick={addToCartHandler}>
                                    Add to Cart
                                </Button>
                            </ListGroup.Item>
