@@ -22,7 +22,7 @@ const CartScreen = ({ match, location, history }) => {
     const cart = useSelector((state) => state.cart)
     const { cartItems } = cart
   const removeFromCartHandler = (id) => {
-    console.log("removed")
+    dispatch(removeFromCart(id))
   }
 
   const checkoutHandler = () => {
@@ -38,7 +38,7 @@ const CartScreen = ({ match, location, history }) => {
             Your cart is empty <Link to='/'>Go Back</Link>
           </Message>
         ) : (
-          <ListGroup variant='flush'>
+          <ListGroup >
             {cartItems.map((item) => (
               <ListGroup.Item key={item.product}>
                 <Row>
