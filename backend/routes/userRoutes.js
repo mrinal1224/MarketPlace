@@ -1,8 +1,13 @@
-import asyncHandler from "express-async-handler"
-import  User from "../models/userModel.js"
+import express from "express"
+const router = express.Router()
+import {authUser} from "../controllers/userControllers.js"
 
-const authUser = asyncHandler(async (req , res) =>{
+router.post('/login' , authUser)
 
-    
 
-})
+
+
+
+
+
+export default router
