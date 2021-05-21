@@ -1,5 +1,5 @@
 import asyncHandler from "express-async-handler"
-import  Product from "../models/productModel"
+import Product from "../models/productModel.js"
 
 const getProducts = asyncHandler(async (req , res) =>{
 
@@ -10,6 +10,7 @@ const getProducts = asyncHandler(async (req , res) =>{
 
 
 const getProductsById = asyncHandler(async (req , res)=>{
+ const product = await Product.findById(req.params.id)
 if(product){
      res.json(product)
 } else{

@@ -1,5 +1,5 @@
 import asyncHandler from "express-async-handler"
-import { Error } from "mongoose"
+
 import User from "../models/userModel.js"
 import generateToken from "../utils/tokenGenerator.js"
 

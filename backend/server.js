@@ -8,13 +8,14 @@ import productRoutes from "./routes/productRoutes.js"
 import userRoutes from "./routes/userRoutes.js"
 import { notFound, errorHandler } from './middleware/errorhandler.js'
 
-app.use(express.json())
+
 
 dotenv.config();
 
 connectDB();
 
 const app = express(); 
+app.use(express.json())
 
 const PORT= process.env.PORT || 5000
 const mode = process.env.NODE_ENV
